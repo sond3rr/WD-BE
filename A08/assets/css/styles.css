@@ -1,0 +1,85 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('../img/bg.png');
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Second image (Islands) */
+.bgimg-2 {
+  background-image: url("../img/fbg.png");
+  min-height: 600px;
+
+}
+
+/* Third image*/
+.bgimg-3 {
+  background-image: url("../img/odiebg.png");
+  min-height: 600px;
+
+}
+
+/* Fourth image (BEST) */
+.bgimg-4 {
+  background-image: url("../img/gbg.png");
+  min-height: 600px;
+
+}
+
+/* Fifth image (Gaming) */
+.bgimg-5 {
+  background-image: url("../img/gamebg.png");
+  min-height: 600px;
+
+}
+
+.w3-wide {
+  letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4,
+  .bgimg-5 {
+    background-attachment: scroll;
+  }
+}
